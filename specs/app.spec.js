@@ -51,7 +51,6 @@ describe('GetTotal', () => {
         [[{ price: 10, quantity: 10 }], 100, 0],
         [[{ price: 10, quantity: 10 }], 10, 90],
     ];
-
     test.each(results)('getTotal = expected', (items, discount, expected) => {
         expect(getTotal(items, discount)).toBe(expected);
     });
